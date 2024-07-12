@@ -3,10 +3,7 @@ package proj.aparelho;
 public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet{
 
 
-    @Override
-    public void tocar() {
-        System.out.println("Reproduzindo musica.");
-    }
+  
 
     @Override
     public void pausar() {
@@ -15,9 +12,15 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
 
     @Override
     public void selecionarMusica(String musica) {
-        System.out.println("Musica selecionada: " + musica);
+        System.out.println("Musica selecionada.");
     }
 
+    @Override
+    public void tocar(String musica) {
+        System.out.println("Reproduzindo musica: " + musica);
+    }
+    
+    
     @Override
     public void ligar(String numero) {
         System.out.println("Ligando para: " + numero);
@@ -25,7 +28,7 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
 
     @Override
     public void atender() {
-        System.out.println("Atendendo a chamada.");
+        System.out.println("Atendeu a chamada.");
     }
 
     @Override
@@ -33,6 +36,7 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
         System.out.println("Iniciando correio de voz.");
     }
 
+    
     @Override
     public void exibirPagina(String url) {
         System.out.println("Exibindo pagina: " + url);
@@ -40,12 +44,14 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
 
     @Override
     public void adicionarNovaAba(String url) {
-        System.out.println("Nova aba adicionada com URL: " + url);
+        System.out.println("Nova aba adicionada.");
     }
 
     @Override
     public void atualizarPagina() {
         System.out.println("Pagina atualizada.");
     }
+
+	
 
 }
